@@ -1,0 +1,6 @@
+
+
+.full-group:hover path{
+  cursor: pointer;
+  fill: #505050;
+}

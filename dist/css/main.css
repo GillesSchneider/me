@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+
+:root{
+
+	--primary-color: #10217D;
+	--secondary-color: #16C2D5;
+	--third-color: #89DEE2 ;
+	--black: #fff;
+
+
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:var(--primary-color);
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
