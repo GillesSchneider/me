@@ -4,8 +4,12 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
 :root {
 
+  --lol: #6610f2;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -96,6 +100,77 @@
 }
 
 
+.heading-1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: #5f679c;
+  text-shadow: 0 1px 1px lightgray;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: #b8cfe6;
+  text-shadow: 0 1px 1px #FFFFFF;
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  color: #FF00FF;
+  text-shadow: 0 1px 1px #FFFFFF;
+  text-transform: uppercase;
+}
+
+.divider-1 {
+  border-bottom: 1px solid lightgray;
+  background-color: lightgray;
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+.divider-1 span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #5f679c;
+}
+
+.divider-2 {
+  border-bottom: 1px solid #FFF;
+  background-color: #DADADA;
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+.divider-2 span {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #b8cfe6;
+}
+
+.divider-3 {
+  border-bottom: 1px solid #FFF;
+  background-color: #DADADA;
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+.divider-3 span {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #FF00FF;
+}
 
 .h1-para { color: var(--dark); font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; line-height: 58px; margin: 0 0 58px; text-align: center;}
 
@@ -104,7 +179,7 @@
 .p-para{ color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; text-align: center; line-height: 26px; text-indent: 30px; margin: 0;}
 
 
-.p-timeline{ color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; text-align: justify; line-height: 26px; text-indent: 30px; margin: 0; }
+.p-timeline{color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; text-align: justify; line-height: 26px; margin: 0; }
 
 .date-timeline-left{background: #b8cfe6; float: right; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
 
@@ -117,8 +192,10 @@
 
 .a-nav{ color: #fff; font-family: 'Lucida Sans', Arial, sans-serif; }
 
-.date-para { background: #fe921f; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
-}
+.date {  color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 30px 0 10px; padding: 10px 15px 8px; text-transform: uppercase; }
+
+.skills { color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
+
 
 
 
@@ -196,14 +273,21 @@
   color: white; /* White text color */
   height: 25px;
 }
+.tag-list span {
+  padding: 2px 4px;
+  border: 1px solid #6e79a9;
+  border-radius: 5px;
+  color: white;
+  background: #6e79a9;
+  font-family:'Lato', sans-serif;
+  font-size: 15px;
+  margin: 0 5px 10px 0;
+  font-weight: 500;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+}
 
-.python {width: 90%; background-color: #323377;} /* Green */
-.java {width: 80%; background-color: #323377;} /* Blue */
-.c{width: 65%; background-color: #c7e1f3;} /* Red */
-.pytorch {width: 80%; background-color: #323377;} /* Dark Grey */
-.css {width: 75%; background-color: #323377;} /* Green */
-.html {width: 80%; background-color: #323377;} /* Blue */
-.js{width: 60%; background-color: #c7e1f3;} /* Red */
 
 .section-title{
   margin-top: 10px;
