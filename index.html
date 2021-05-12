@@ -75,6 +75,8 @@
 
 		</header>
 
+		<!-- TODO credit everything that needs to be credited-->
+
 		<section>
 			<div class="container rounded" style="background: rgb(255, 255, 255);">
 
@@ -107,22 +109,22 @@
 								<h5 style="color: black; opacity: 0.7;"> Programming
 								</h5>
 								<span>
-									Java
+									<i class="fab fa-java" style="margin-right: 3px;"></i>Java
 								</span>
 								<span>
-									Python
+									<i class="fab fa-python" style="margin-right: 1px;"></i>  Python
 								</span>
 								<span>
-									BioPython
+									<i class="fab fa-python" style="margin-right: 1px;"></i>  BioPython
 								</span>
 								<span>
-									Pytorch
+									<i class="fab fa-python" style="margin-right: 1px;"></i> Pytorch
 								</span>
 								<span>
-									Nilearn
+									<i class="fab fa-python" style="margin-right: 1px;"></i>  Nilearn
 								</span>
 								<span>
-									Pandas
+									<i class="fab fa-python" style="margin-right: 1px;"></i>  Pandas
 								</span>
 								<span>
 									C++
@@ -168,14 +170,14 @@
 							</div>
 							<br>
 					</div>
+					<!-- TODO know more about, click and display -->
 
 					<div class="col">
 						<li style="display: inline;">
 							<p class="date" style="background: #6e79a9">Extra Online Courses</p>
 
-							<p style="color: black; opacity: 0.7; text-align: justify;">   
-								COVID-19 has a major impact on our lives. The pandemic we are going through reveals how important it is to understand biological behaviour of viruses to save lives. It became one of my main concerns.
-								Therefore, I enrolled into an extra online specialization in Bioinformatics. 
+							<p style="color: black; opacity: 0.7; text-align: justify;">
+								<!-- TODO explain why extra online courses -->
 							</p>
 						<p class="p-timeline"><i class="fa fa-clock-o" aria-hidden="true"></i><a href="https://www.coursera.org/specializations/bioinformatics"> [WIP] Bioinformatics Specialization</a> <i>by University of California San Diego</i></p>
 						<p class="p-timeline"><i>Completed so far: Finding Hidden Messages in DNA (Bioinformatics I)</i></p>
@@ -191,6 +193,8 @@
 								<i class="fa-li fa fa-graduation-cap" style="margin-left: 25px;"></i>
 								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Master of Applied Computer Science</h5>
 							</div>
+							<!-- TODO elaborate on concordia university -->
+
 							<p class="p-timeline"> <a href="https://www.concordia.ca/" style="color: #6e79a9;">Concordia University,</a> Montreal, Canada 🇨🇦</p>
 							<p style="color: black; opacity: 0.7;"> Computer Vision, Artificial Intelligence, Scientific Computation, Algorithms and Software.</p>
 						<div class="divider-1"> <span></span>
@@ -202,13 +206,14 @@
 								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Master of Science in Engineering</h5>
 							</div>
 							<p class="p-timeline">  <a href="https://www.imt-atlantique.fr/en" style="color: #6e79a9;">IMT Atlantique</a>, Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> IMT Atlantique is one of the best engineering school in France. The first year covers a wide range of general topics including mathematics, physics, electronics, computing technology, etc. 
+							<p style="color: black; opacity: 0.7; text-align: justify;"> IMT Atlantique is one of the best engineering school in France<span id="dots1">...</span><span class="hide" id="more1">. The first year covers a wide range of general topics including mathematics, physics, electronics, computing technology, etc.
 								After my first year, I chose the one year <i>Healthcare Engineering</i> specialization. I studied surgery technologies, medical imaging, robotics, bio-sensors and biology</i>. </i> 
 								Besides, I was highly involded in community life of the campus: <i>Arts Committee</i> (external relations), <i> Students Committee
 								</i> (events organizer) and <i> Federation of Associations </i>
 								</i> (arts committee official).
-							</p>
-							<div class="divider-1"> <span></span>
+							</span>
+							<a style="color:blue;" onclick="myFunction('1')" id="myBtn1"> [Read more]</a>
+							<div class="divider-1"> <span></span></div>
 
 						</li>
 						<li style="display: inline;">
@@ -218,11 +223,12 @@
 								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Research Internship</h5>
 							</div>
 							<p class="p-timeline"> IMT Atlantique, <a href="https://labsticc.fr/en" style="color: #6e79a9;">LabSticc</a>,  Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> A brain parcellation is a map of distinct but closely interacting regions. I worked on a deep learning network that generates a subject-specific brain parcellation. 
+							<p style="color: black; opacity: 0.7; text-align: justify;"> A brain parcellation is a map of distinct but closely interacting regions<span id="dots2">...</span><span class="hide" id="more2">. I worked on a deep learning network that generates a subject-specific brain parcellation.
 								Starting with a fixed brain atlas, the network tries to slowly modify it to adapt to the subject brain specificities. At end, we should obtain more specific information that are not present in the average model. 
 								To do so, I used famous neuro-imaging datasets such as <i>Invidual Brain Charting</i> and <i>Haxby</i>. Some Python scripts I used are available on my Github <a href="https://github.com/GillesSchneider/neuro-imaging">here</a>.
-							</p>
-							<div class="divider-1"> <span></span>
+							</span>
+							<a style="color:blue;" onclick="myFunction('2')" id="myBtn2"> [Read more]</a>
+							<div class="divider-1"> <span></span></div>
 
 						</li>
 
@@ -233,11 +239,13 @@
 								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Software Project</h5>
 							</div>
 							<p class="p-timeline"> <a href="https://www.oxyledger.com/en/" style="color: #6e79a9;">Oxyledger</a>  Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> Implementable medical devices (protheses or implants) are stricly regulated due to their invasive properties. Hovewer, health scandals still regurlarly occurs.
+							<p style="color: black; opacity: 0.7; text-align: justify;"> Implementable medical devices (protheses or implants) are stricly regulated due to their invasive properties<span id="dots3">...</span><span class="hide" id="more3">. Hovewer, health scandals still regurlarly occurs.
 								The aim was to develop a multi-device interface for the <i>traceability </i> of implantable medical devices to put manufacturers, healthcare institutions and patients closer. 
 								We worked side by side with the Oxyledger team on the first version of both patient and surgeon interfaces. 
-								I was in charge of deploying the server (Springboot Framework, Restful API) of the ecosystem and leading the group to the objectives.</p>
-						<div class="divider-1"> <span></span>
+								I was in charge of deploying the server (Springboot Framework, Restful API) of the ecosystem and leading the group to the objectives.
+							</span>
+							<a style="color:blue;" onclick="myFunction('3')" id="myBtn3"> [Read more]</a>
+							<div class="divider-1"> <span></span></div>
 						</li>
 						<li style="display: inline;">
 							<p class="date" style="background: #b8cfe6">2016 - 2018</p>
@@ -1898,7 +1906,24 @@
 		</footer>
 		
 	
+	<script>
+	function myFunction(n) {
+		var dots = document.getElementById("dots" + n);
+		var moreText = document.getElementById("more" + n);
+		var btnText = document.getElementById("myBtn" + n);
 
+	  	if (dots.style.display === "none") {
+			dots.style.display = "inline";
+			btnText.innerHTML = "Read more";
+			moreText.style.display = "none";
+		}
+	  	else {
+			dots.style.display = "none";
+			btnText.innerHTML = "Read less";
+			moreText.style.display = "inline";
+	  }
+	}
+	</script>
 
 
 

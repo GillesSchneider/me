@@ -72,6 +72,15 @@
 .mySlides {
   display: none;
 }
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
