@@ -227,7 +227,7 @@
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   width: 750px;
   margin:0 auto;
-  font-size: 30px;
+  font-size: 20px;
   padding: 3rem;
 }
 
@@ -255,7 +255,7 @@
     font-family: FontAwesome;
     position: absolute;
     color: #6e79a9;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .component blockquote.EN:before{
