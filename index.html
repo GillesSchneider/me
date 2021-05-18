@@ -16,7 +16,7 @@
 	</head>
 
 	<body style="background: url('assets/images/body-background.svg');" >
-		<header>
+		<header style="height:100%;">
 
 			<div class="container" style="color:white; background:white;" >
 				<div class="row" style="height: 20px;">
@@ -35,7 +35,7 @@
 
 					<div class="col-md-4" style="vertical-align: middle; text-align:center; background: var(--tertiary);">
 							<img class = "profile-image" src="assets/images/pic.jpeg">
-							<div class="container my-2">
+							<div class="container my-2 name-websites">
 								<li style="display: inline; ">
 									<p class="image-sub-text">Gilles Schneider</p>
 								</li>
@@ -77,7 +77,7 @@
 		<section>
 			<div class="container" style="background: white;">
 
-				<div class="row">
+				<div class="row" class="skills">
 
 					<div class="col-md-4" style="background: var(--tertiary);">
 							<div class = "tag-list">
@@ -166,8 +166,8 @@
 					</div>
 					<!-- TODO know more about, click and display -->
 
-					<div class="col">
-						<li style="display: inline;">
+					<div class="col timeline" onscroll="revealTimeline()">
+						<li class="li-timeline" style="display: inline;">
 							<p class="t-date">Extra Online Courses</p>
 
 							<p style="color: black; opacity: 0.7; text-align: justify;">
@@ -175,22 +175,22 @@
 							</p>
 						<h6 class="t-title-2">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<a class="t-link" href="https://www.coursera.org/specializations/bioinformatics" >
+							<a class="t-link" href="https://www.coursera.org/specializations/bioinformatics" target="_blank">
 								[WIP] Bioinformatics Specialization
 							</a>
 							<i>by University of California San Diego</i>
 						</h6>
 
-						<h6 class="t-paragraph">
+						<h6 class="t-title-2">
 							<i class="fa fa-check" aria-hidden="true"></i>
-							<a class="t-link" href="https://www.coursera.org/account/accomplishments/verify/YJ5KT236RVL5">
+							<a class="t-link" href="https://www.coursera.org/account/accomplishments/verify/YJ5KT236RVL5" target="_blank">
 								Access Bioinformatics databases with Biopython
 							</a>
 							<i>by Coursera</i>
 						</h6>
-						<h6 class="p-timeline">
+						<h6 class="t-title-2">
 							<i class="fa fa-check" aria-hidden="true"></i>
-							<a class="t-link" href="https://www.coursera.org/account/accomplishments/verify/RLNAQKPSRW5M">
+							<a class="t-link" href="https://www.coursera.org/account/accomplishments/verify/RLNAQKPSRW5M" target="_blank">
 								COVID-19 Contact Tracing
 							</a>
 							<i>by John Hopkins University</i>
@@ -199,7 +199,7 @@
 							<div class="divider-1"></div>
 
 						</li>
-						<li style="display: inline;">
+						<li class="li-timeline" style="display: inline;">
 
 							<p class="t-date">2020 - CURRENT</p>
 							<div class="container">
@@ -210,92 +210,128 @@
 							<!-- TODO elaborate on concordia university -->
 
 							<h6 class="t-title-2">
-								<a href="https://www.concordia.ca/" class="t-link">
+								<a href="https://www.concordia.ca/" target="_blank" class="t-link">
 									Concordia University,
 								</a>
 								Montreal, Canada 🇨🇦
 							</h6>
-							<p class="t-paragraph">
-								Computer Vision, Artificial Intelligence, Scientific Computation, Algorithms and Software.
-							</p>
+							<div class = "t-tag-list">
+								<span class="t-tag">AI</span><span class="t-tag">Data Science</span><span class="t-tag">Software Engineering</span>
+								<span>Algorithms</span>
+							</div>
+
 							<div class="divider-1"></div>
 						</li>
-						<li style="display: inline;">
+						<li class="li-timeline" style="display: inline;">
 							<p class="t-date">2018 - CURRENT</p>
 							<div class="container">
 								<i class="fa-li fa fa-graduation-cap" style="margin-left: 30px;"></i>
 								<h5 class="t-title-1"> Master of Science in Engineering</h5>
 							</div>
 							<h6 class="t-title-2">
-								<a class = "t-link" href="https://www.imt-atlantique.fr/en">
+								<a class = "t-link" href="https://www.imt-atlantique.fr/en" target="_blank">
 									IMT Atlantique,
 								</a>
 								Brest, France 🇫🇷
 							</h6>
+							<div class = "t-tag-list">
+								<span>Healthcare Engineering</span><span>Biology</span><span>Signal Processing</span>
+							</div>
 							<p class="t-paragraph">
 								IMT Atlantique is one of the best engineering school in France. The first year covers a wide range of general topics including mathematics, physics, electronics, computing technology, etc.
 								After my first year, I chose the one year <i>Healthcare Engineering</i> specialization. I studied surgery technologies, medical imaging, robotics, bio-sensors and biology</i>. </i> 
-								Besides, I was highly involded in community life of the campus: <i>Arts Committee</i> (external relations), <i> Students Committee
-								</i> (events organizer) and <i> Federation of Associations </i>
-								</i> (arts committee official).
+
 							</p>
 							<div class="divider-1"></div>
 
 						</li>
-						<li style="display: inline;">
+						<li class="li-timeline" style="display: inline;">
 							<p class="t-date">MARCH 2020 - JULY 2020</p>
 							<div class="container">
 								<i class="fa-li fa fa-flask" style="margin-left: 25px;"></i>
-								<h5 class="t-title-1"> Research Internship</h5>
+								<h5 class="t-title-1"> Research Internship - Supervised end-to-end brain parcellation</h5>
 							</div>
 							<h6 class="t-title-2">
-								<a class="t-link" href="https://labsticc.fr/en">
+								<a class="t-link" href="https://labsticc.fr/en" target="_blank">
 									LabSticc,
 								</a>
 								IMT Atlantique, Brest, France 🇫🇷
 							</h6>
-
+							<div class = "t-tag-list">
+								<span>Neuro-imaging</span><span>Convolutional Neural Network</span><span>Individual Brain Charting</span>
+							</div>
 							<p class="t-paragraph">
-								A brain parcellation is a map of distinct but closely interacting regions. I worked on a deep learning network that generates a subject-specific brain parcellation.
+								A brain parcellation is a map of distinct but closely interacting regions. I worked on a neural network that generates a subject-specific brain parcellation.
 								Starting with a fixed brain atlas, the network tries to slowly modify it to adapt to the subject brain specificities. At end, we should obtain more specific information that are not present in the average model. 
-								To do so, I used famous neuro-imaging datasets such as <i>Invidual Brain Charting</i> and <i>Haxby</i>. Some Python scripts I used are available on my Github <a href="https://github.com/GillesSchneider/neuro-imaging">here</a>
+								Some Python scripts I used are available on my Github <a href="https://github.com/GillesSchneider/neuro-imaging">here</a>
 							</p>
 							<div class="divider-1"></div>
 
 						</li>
 
-						<li style="display: inline;">
+						<li class="li-timeline" style="display: inline;">
 							<p class="t-date">2019</p>
 							<div class="container">
 								<i class="fa-li fa fa-users" style="margin-left: 25px;"></i>
-								<h5 class="t-title-1"> Software Project</h5>
+								<h5 class="t-title-1"> Software Project - Multi-device interface for the traceability of <span title="Implantable medical devices" style="font-style: italic">IMDs</span></h5>
 							</div>
 							<h6 class="t-title-2">
-								<a class="t-link" href="https://www.oxyledger.com/en/">
+								<a class="t-link" href="https://www.oxyledger.com/en/" target="_blank">
 									Oxyledger,
 								</a>
 								Brest, France 🇫🇷
 							</h6>
+							<div class = "t-tag-list">
+								<span>Medical Devices</span><span>Spring Framework</span><span>React Native</span>
+							</div>
 							<p class="t-paragraph">
 								Implementable medical devices (protheses or implants) are stricly regulated due to their invasive properties. Hovewer, health scandals still regurlarly occurs.
-								The aim was to develop a multi-device interface for the <i>traceability </i> of implantable medical devices to put manufacturers, healthcare institutions and patients closer. 
-								We worked side by side with the Oxyledger team on the first version of both patient and surgeon interfaces. 
-								I was in charge of deploying the server (Springboot Framework, Restful API) of the ecosystem and leading the group to the objectives.
+								The aim was to develop a multi-device interface for the <i>traceability </i> of implantable medical devices to put manufacturers, healthcare institutions and patients closer.
+								I was in charge of deploying the server of the ecosystem and leading the group to the objectives.
 							</p>
 							<div class="divider-1"></div>
 						</li>
-						<li style="display: inline;">
+						<li class="li-timeline" style="display: inline;">
+
+							<p class="t-date">2018</p>
+							<div class="container">
+								<i class="fa-li fa fa-users" style="margin-left: 25px;"></i>
+								<h5 class="t-title-1"> Robotics Project - Controlling Poppy Robot with an arm orthesis</h5>
+							</div>
+							<h6 class="t-title-2">
+								<a href="https://www.imt-atlantique.fr/en" class="t-link" target="_blank">
+									IMT Atlantique,
+								</a>
+								Brest, France 🇫🇷
+							</h6>
+							<div class = "t-tag-list">
+								<span>Electronics</span><span>Open Source</span><span>Sensors</span>
+							</div>
+							<p class="t-paragraph">
+								Development of an orthesis that detects the movements of a human forearm to control the Poppy robot in the same way.
+								Demo video available
+								<a href="https://mediacenter.telecom-bretagne.eu/videos/MEDIA190702175304558/multimedia/MEDIA190702175304558.mp4" target="_blank">
+									here.
+								</a>
+
+							</p>
+							<div class="divider-1"></div>
+						</li>
+						<li class="li-timeline" style="display: inline;">
 							<p class="t-date">2016 - 2018</p>
 							<div class="container">
 								<i class="fa-li fa fa-book" style="margin-left: 25px;"></i>
 								<h5 class="t-title-1"> Preparatory Classes</h5>
 							</div>
 							<h6 class="t-title-2">
-								<a class="t-link" href="http://www.h-poincare.fr/">
+								<a class="t-link" href="http://www.h-poincare.fr/" target="_blank">
 									Henri Poincaré High School,
 								</a>
 								 Nancy, France 🇫🇷
 							</h6>
+							<div class = "t-tag-list">
+								<span>Maths</span><span>Physics</span><span>Chemistry</span><span>Engineering</span>
+							</div>
 							<p class="t-paragraph">
 								Maths Physics, Engineering Sciences. Two years of intensive courses to train for enrolment in one of the French Grandes Ecoles (Great School).
 							</p>
@@ -1917,7 +1953,7 @@
 
 				<div class="row">
 					<div class ="col-md 4"  style="text-align: center;">
-						<h4 style="color:#6e79a9; opacity: 0.7;"> <i class="fa fa-home"></i> Address </h5>
+						<h5 style="color:#6e79a9; opacity: 0.7;"> <i class="fa fa-home"></i> Address </h5>
 						<li style="display: inline; color: rgb(78, 75, 75);">
 							<p style="margin-bottom: 1px;">1198 St Mathieu Street</p>
 						</li>
@@ -1928,7 +1964,7 @@
 					</div>
 					<div class ="col-md 4"  style="text-align: center;"">
 						
-						<h4 style="color: #6e79a9; opacity: 0.7;"> <i class="fa fa-phone"></i> Phone </h5>
+						<h5 style="color: #6e79a9; opacity: 0.7;"> <i class="fa fa-phone"></i> Phone </h5>
 						<li style="display: inline; color: rgb(78, 75, 75);">
 							<p style="margin-bottom: 1px;"> 🇫🇷 +33 7 49 50 52 13 </p>
 						</li>
@@ -1938,7 +1974,7 @@
 
 					</div>
 					<div class ="col-md 4"  style="text-align: center;">
-						<h4 style="color: #6e79a9; opacity: 0.7;"> <i class="fa fa-envelope"></i> Email </h5>
+						<h5 style="color: #6e79a9; opacity: 0.7;"> <i class="fa fa-envelope"></i> Email </h5>
 						<li style="display: inline; color: rgb(78, 75, 75);">
 							<p > gilles[dot]schneider[dot]imt[at]gmail.com </p>
 						</li>
@@ -1947,41 +1983,10 @@
 			</div>
 			<br>
 		</footer>
-		
-	
-	<script>
-	function myFunction(n) {
-		var dots = document.getElementById("dots" + n);
-		var moreText = document.getElementById("more" + n);
-		var btnText = document.getElementById("myBtn" + n);
 
-	  	if (dots.style.display === "none") {
-			dots.style.display = "inline";
-			btnText.innerHTML = "Read more";
-			moreText.style.display = "none";
-		}
-	  	else {
-			dots.style.display = "none";
-			btnText.innerHTML = "Read less";
-			moreText.style.display = "inline";
-	  }
-	}
-	</script>
+			<script src="https://unpkg.com/scrollreveal"></script>
+			<script src="app.js"></script>
 
-
-
-	
-
-
-
-
-
-
-
-
-
-
-	
 	</body>
 
 
