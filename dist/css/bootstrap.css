@@ -227,6 +227,7 @@
   font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   width: 750px;
   margin:0 auto;
+  font-size: 30px;
   padding: 3rem;
 }
 
@@ -254,7 +255,7 @@
     font-family: FontAwesome;
     position: absolute;
     color: #6e79a9;
-    font-size: 34px;
+    font-size: 50px;
 }
 
 .component blockquote.EN:before{
@@ -328,19 +329,6 @@
 .sidekick:after {content: '\201c';}
 .sidekick cite {font-size: 50%; text-align:center; top:50%}
 .sidekick cite:before {content: ' \2015 '}
-
-
-.p-para{ color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; text-align: center; line-height: 26px; text-indent: 30px; margin: 0;}
-
-
-.date-timeline-left{background: #b8cfe6; float: right; color: #ffffff; display: inline-block; font-family: 'Lato', sans-serif; font-size: 12px; font-weight: bold; line-height: 12px; letter-spacing: 1px; margin: 0 0 30px; padding: 10px 15px 8px; text-transform: uppercase; }
-
-.a-para { color: #fe921f; text-decoration: underline; }
-
-
-
-
-
 
 
 .content {
