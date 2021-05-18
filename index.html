@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-<html lang="fr">
+<html lang="en">
 
 	<head>
 		<title>Gilles's Resume</title>
@@ -13,15 +13,12 @@
 	  	<link rel="stylesheet" type="dist/css" href="timeline.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	
-	
 	</head>
+
 	<body style="background: url('assets/images/body-background.svg');" >
 		<header>
 
 			<div class="container" style="color:white; background:white;" >
-
 				<div class="row" style="height: 20px;">
 					<div class="col" style="background: #6e79a9;"></div>
 					<div class="col" style="background: #8a96ce;"></div>
@@ -33,14 +30,14 @@
 					</div>
 				</div>
 	
-	
+				<!-- TODO create a class for every icon-->
 				<div class="row">
-	
-					<div class="col-md-4 rounded" style="vertical-align: middle; text-align:center; background: #e0ecf8;">
-							<img style="border-radius: 50%;" src="assets/images/pic.jpeg" alt="Card image">
+
+					<div class="col-md-4" style="vertical-align: middle; text-align:center; background: var(--tertiary);">
+							<img class = "profile-image" src="assets/images/pic.jpeg">
 							<div class="container my-2">
 								<li style="display: inline; ">
-									<p style="font-size:30px; color: black;">Gilles Schneider</p>
+									<p class="image-sub-text">Gilles Schneider</p>
 								</li>
 								<li style ="display: inline; padding-right: 10px;">
 									<a href="https://www.hackerrank.com/gilles_schneide1" class="fab fa-hackerrank" style="color: #323377; font-size: 40px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%;"></a>"
@@ -56,17 +53,17 @@
 					</div>
 	
 
-					<div class="col my-4" style="text-align:center; border: solid balck 1px">
-							<h1 style="color: black; font-size: 50px;"> About </h1>
-							<p class="p-timeline" style="text-align: center;" > Nice to meet you. My name is Gilles and I am a computer science and engineering student with good knowledge of artifical intelligence, computer vision, and algorithm design techniques. I would like to develop new technologies for the healthcare industry, especially in medical imaging. </p>
+					<div class="col my-4" style="text-align:center;">
+						<h1 class="t-intro"> About </h1>
+						<p class="p-intro" >
+							Nice to meet you. My name is Gilles and I am a computer science and engineering student
+							with good knowledge of artifical intelligence, computer vision, and algorithm design techniques.
+							I would like to develop new technologies for the healthcare industry, especially in medical imaging. </p>
 						<br>
-					
 
-						
-					<button class="contact-me"> 
-						<a href="mailto:gilles.schneider.imt@gmail.com" style="color:white;"><i class="fas fa-paper-plane" style="padding-right: 5px;"></i> Contact me</a>.<br>
-					</button>
-
+						<button class="contact-me">
+							<a href="mailto:gilles.schneider.imt@gmail.com"></a><i class="fas fa-paper-plane" style="padding-right: 5px;"></i>Contact me<br>
+						</button>
 					</div>
 	
 				</div>
@@ -78,14 +75,14 @@
 		<!-- TODO credit everything that needs to be credited-->
 
 		<section>
-			<div class="container rounded" style="background: rgb(255, 255, 255);">
+			<div class="container" style="background: white;">
 
 				<div class="row">
 
-					<div class="col-md-4" style="background: #e0ecf8;">
+					<div class="col-md-4" style="background: var(--tertiary);">
 							<div class = "tag-list">
 								<br>
-								<h5 style="color: black; opacity: 0.7;"> Interests </h5>
+								<h4 class="t-skills">Interests</h4>
 								<span>
 									Travel
 								</span>
@@ -102,32 +99,28 @@
 									Cooking
 								</span>
 							</div>
-		
-							<hr style="width: 80%;">
+
+							<hr class="s-skills">
 							<div class = "tag-list">
 								<br>
-								<h5 style="color: black; opacity: 0.7;"> Programming
-								</h5>
+								<h4 class="t-skills">Programming</h4>
 								<span>
-									<i class="fab fa-java" style="margin-right: 3px;"></i>Java
+									<i class="fab fa-java s-icon-java"></i>Java
 								</span>
 								<span>
-									<i class="fab fa-python" style="margin-right: 1px;"></i>  Python
+									<i class="fab fa-python s-icon-python"></i>Python
 								</span>
 								<span>
-									<i class="fab fa-python" style="margin-right: 1px;"></i>  BioPython
+									<i class="fab fa-python s-icon-python"></i>BioPython
 								</span>
 								<span>
-									<i class="fab fa-python" style="margin-right: 1px;"></i> Pytorch
+									<i class="fab fa-python s-icon-python"></i>Pytorch
 								</span>
 								<span>
-									<i class="fab fa-python" style="margin-right: 1px;"></i>  Nilearn
+									<i class="fab fa-python s-icon-python"></i>Nilearn
 								</span>
 								<span>
-									<i class="fab fa-python" style="margin-right: 1px;"></i>  Pandas
-								</span>
-								<span>
-									C++
+									<i class="fab fa-python s-icon-python"></i>Pandas
 								</span>
 								<span>
 									OpenVTK
@@ -137,10 +130,10 @@
 								</span>
 							</div>
 
-							<hr style="width: 80%;">
+							<hr class="s-skills">
 							<div class = "tag-list">
 								<br>
-								<h5 style="color: black; opacity: 0.7;"> Skills </h5>
+								<h4 class="t-skills">Skills</h4>
 								<span>
 									Deductive skills
 								</span>
@@ -154,10 +147,11 @@
 									Adaptability
 								</span>
 							</div>
-							<hr style="width: 80%;">
+
+							<hr class="s-skills">
 							<div class = "tag-list">
 								<br>
-								<h5 style="color: black; opacity: 0.7;"> Languages </h5>
+								<h4 class="t-skills">Languages</h4>
 								<span>
 									French: Fluent
 								</span>
@@ -174,7 +168,7 @@
 
 					<div class="col">
 						<li style="display: inline;">
-							<p class="date" style="background: #6e79a9">Extra Online Courses</p>
+							<p class="t-date">Extra Online Courses</p>
 
 							<p style="color: black; opacity: 0.7; text-align: justify;">
 								<!-- TODO explain why extra online courses -->
@@ -184,72 +178,108 @@
 						<p class="p-timeline"><i class="fa fa-check" aria-hidden="true"></i><a href="https://www.coursera.org/account/accomplishments/verify/YJ5KT236RVL5"> Access Bioinformatics databases with Biopython</a> <i>by Coursera</i></p> 
 						<p class="p-timeline"><i class="fa fa-check" aria-hidden="true"></i><a href="https://www.coursera.org/account/accomplishments/verify/RLNAQKPSRW5M"> COVID-19 Contact Tracing </a> <i>by John Hopkins University</i></p> 
 							
-							<div class="divider-1"> <span></span>
+							<div class="divider-1"></div><span></span>
 
 						</li>
 						<li style="display: inline;">
-							<p class="date" style="background: #b8cfe6">2020 - CURRENT</p>
-							<div class="container" style="color: black; opacity: 0.7;">
-								<i class="fa-li fa fa-graduation-cap" style="margin-left: 25px;"></i>
-								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Master of Applied Computer Science</h5>
+
+							<p class="t-date">2020 - CURRENT</p>
+							<div class="container">
+								<i class="fa-li fa fa-graduation-cap" style="margin-left: 30px;"></i>
+								<h5 class="t-title-1"> Master of Applied Computer Science</h5>
 							</div>
 							<!-- TODO elaborate on concordia university -->
 							<!-- TODO elaborate on concordia university -->
 
-							<p class="p-timeline"> <a href="https://www.concordia.ca/" style="color: #6e79a9;">Concordia University,</a> Montreal, Canada 🇨🇦</p>
-							<p style="color: black; opacity: 0.7;"> Computer Vision, Artificial Intelligence, Scientific Computation, Algorithms and Software.</p>
-						<div class="divider-1"> <span></span>
+							<h6 class="t-title-2">
+								<a href="https://www.concordia.ca/" class="t-link">
+									Concordia University,
+								</a>
+								Montreal, Canada 🇨🇦
+							</h6>
+							<p class="t-paragraph">
+								Computer Vision, Artificial Intelligence, Scientific Computation, Algorithms and Software.
+							</p>
+							<div class="divider-1"></div>
 						</li>
 						<li style="display: inline;">
-							<p class="date" style="background: #6e79a9">2018 - CURRENT</p>
-							<div class="container" style="color: black; opacity: 0.7;">
-								<i class="fa-li fa fa-graduation-cap" style="margin-left: 25px;"></i>
-								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Master of Science in Engineering</h5>
+							<p class="t-date">2018 - CURRENT</p>
+							<div class="container">
+								<i class="fa-li fa fa-graduation-cap" style="margin-left: 30px;"></i>
+								<h5 class="t-title-1"> Master of Science in Engineering</h5>
 							</div>
-							<p class="p-timeline">  <a href="https://www.imt-atlantique.fr/en" style="color: #6e79a9;">IMT Atlantique</a>, Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> IMT Atlantique is one of the best engineering school in France. The first year covers a wide range of general topics including mathematics, physics, electronics, computing technology, etc.
+							<h6 class="t-title-2">
+								<a class = "t-link" href="https://www.imt-atlantique.fr/en">
+									IMT Atlantique,
+								</a>
+								Brest, France 🇫🇷
+							</h6>
+							<p class="t-paragraph">
+								IMT Atlantique is one of the best engineering school in France. The first year covers a wide range of general topics including mathematics, physics, electronics, computing technology, etc.
 								After my first year, I chose the one year <i>Healthcare Engineering</i> specialization. I studied surgery technologies, medical imaging, robotics, bio-sensors and biology</i>. </i> 
 								Besides, I was highly involded in community life of the campus: <i>Arts Committee</i> (external relations), <i> Students Committee
 								</i> (events organizer) and <i> Federation of Associations </i>
 								</i> (arts committee official).
-							<div class="divider-1"> <span></span></div>
+							</p>
+							<div class="divider-1"></div>
 
 						</li>
 						<li style="display: inline;">
-							<p class="date" style="background: #b8cfe6">MARCH 2020 - JULY 2020</p>
-							<div class="container" style="color: black; opacity: 0.7;">
+							<p class="t-date">MARCH 2020 - JULY 2020</p>
+							<div class="container">
 								<i class="fa-li fa fa-flask" style="margin-left: 25px;"></i>
-								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Research Internship</h5>
+								<h5 class="t-title-1"> Research Internship</h5>
 							</div>
-							<p class="p-timeline"> IMT Atlantique, <a href="https://labsticc.fr/en" style="color: #6e79a9;">LabSticc</a>,  Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> A brain parcellation is a map of distinct but closely interacting regions. I worked on a deep learning network that generates a subject-specific brain parcellation.
+							<h6 class="t-title-2">
+								<a class="t-link" href="https://labsticc.fr/en">
+									LabSticc,
+								</a>
+								IMT Atlantique, Brest, France 🇫🇷
+							</h6>
+
+							<p class="t-paragraph">
+								A brain parcellation is a map of distinct but closely interacting regions. I worked on a deep learning network that generates a subject-specific brain parcellation.
 								Starting with a fixed brain atlas, the network tries to slowly modify it to adapt to the subject brain specificities. At end, we should obtain more specific information that are not present in the average model. 
 								To do so, I used famous neuro-imaging datasets such as <i>Invidual Brain Charting</i> and <i>Haxby</i>. Some Python scripts I used are available on my Github <a href="https://github.com/GillesSchneider/neuro-imaging">here</a>
-							<div class="divider-1"> <span></span></div>
+							</p>
+							<div class="divider-1"></div>
 
 						</li>
 
 						<li style="display: inline;">
-							<p class="date" style="background: #6e79a9">2019</p>
-							<div class="container" style="color: black; opacity: 0.7;">
+							<p class="t-date">2019</p>
+							<div class="container">
 								<i class="fa-li fa fa-users" style="margin-left: 25px;"></i>
-								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Software Project</h5>
+								<h5 class="t-title-1"> Software Project</h5>
 							</div>
-							<p class="p-timeline"> <a href="https://www.oxyledger.com/en/" style="color: #6e79a9;">Oxyledger</a>  Brest, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7; text-align: justify;"> Implementable medical devices (protheses or implants) are stricly regulated due to their invasive properties. Hovewer, health scandals still regurlarly occurs.
+							<h6 class="t-title-2">
+								<a class="t-link" href="https://www.oxyledger.com/en/">
+									Oxyledger,
+								</a>
+								Brest, France 🇫🇷
+							</h6>
+							<p class="t-paragraph">
+								Implementable medical devices (protheses or implants) are stricly regulated due to their invasive properties. Hovewer, health scandals still regurlarly occurs.
 								The aim was to develop a multi-device interface for the <i>traceability </i> of implantable medical devices to put manufacturers, healthcare institutions and patients closer. 
 								We worked side by side with the Oxyledger team on the first version of both patient and surgeon interfaces. 
 								I was in charge of deploying the server (Springboot Framework, Restful API) of the ecosystem and leading the group to the objectives.
-							<div class="divider-1"> <span></span></div>
+							</p>
+							<div class="divider-1"></div>
 						</li>
 						<li style="display: inline;">
-							<p class="date" style="background: #b8cfe6">2016 - 2018</p>
-							<div class="container" style="color: black; opacity: 0.7;">
+							<p class="t-date">2016 - 2018</p>
+							<div class="container">
 								<i class="fa-li fa fa-book" style="margin-left: 25px;"></i>
-								<h5 style=" margin-left:10px;color: black; opacity: 0.7;"> Preparatory Classes</h5>
+								<h5 class="t-title-1"> Preparatory Classes</h5>
 							</div>
-							<p class="p-timeline"> Henri Poincaré High School, Nancy, France 🇫🇷</p>
-							<p style="color: black; opacity: 0.7;"> Maths Physics, Engineering Sciences. Two years of intensive courses to train for enrolment in one of the French Grandes Ecoles (Great School).
+							<h6 class="t-title-2">
+								<a class="t-link" href="http://www.h-poincare.fr/">
+									Henri Poincaré High School,
+								</a>
+								 Nancy, France 🇫🇷
+							</h6>
+							<p class="t-paragraph">
+								Maths Physics, Engineering Sciences. Two years of intensive courses to train for enrolment in one of the French Grandes Ecoles (Great School).
 							</p>
 						</li>
 					</div>
