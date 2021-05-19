@@ -1,6 +1,8 @@
 const sr = ScrollReveal({
     duration: 1000,
 });
+
+
 sr.reveal('.profile-image', {
 });
 
