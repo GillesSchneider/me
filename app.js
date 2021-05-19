@@ -1,38 +1,50 @@
 const sr = ScrollReveal({
-    duration: 1000,
+    duration: 600,
+    reset: true
 });
 
 
 sr.reveal('.profile-image', {
+    reset: false
 });
 
 sr.reveal('.name-websites', {
+    reset: false
+
 });
 
 sr.reveal('.t-intro', {
-    delay: 500
+    reset: false
+
 });
 
 sr.reveal('.p-intro', {
-     delay: 500
+     delay: 500,
+    reset: false
 });
 
 sr.reveal('.contact-me', {
-     delay: 500
+     delay: 500,
+    reset: false
+
 });
 
 sr.reveal('.skills', {
+     reset: false
 })
 
 sr.reveal('.s-span', {
+     reset: false
 }, 100)
 
 
 sr.reveal('.t-skills', {
+     reset: false
 
 }, 50)
 
 sr.reveal('.tag-list', {
+     reset: false
 }, 50)
 
 sr.reveal('.li-timeline', {
