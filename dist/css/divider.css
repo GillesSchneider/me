@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+
+.heading-1 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #5f679c;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+
+.heading-2 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #b8cfe6;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+
+.heading-3 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #FF00FF;
+		text-shadow: 0 1px 1px #FFFFFF;
+		text-transform: uppercase;
+}
+
+.divider-1 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-1 span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #5f679c;
+}
+
+.divider-2 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-2 span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #b8cfe6;
+}
+
+.divider-3 {
+		border-bottom: 1px solid #FFF;
+		background-color: #DADADA;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-3 span {
+		display: block;
+		width: 50px;
+		height: 1px;
+		background-color: #FF00FF;
+}
