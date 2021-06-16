@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="fr">
+
+	<head>
+		<title>Gilles Schneider</title>
+		<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link rel="stylesheet" href="dist/css/cadre.scss">
+	  	<link rel="stylesheet" type="dist/css" href="main.css">
+	  	<link rel="stylesheet" type="dist/css" href="timeline.css">
+		<meta name="description" content="Élève ingénieur en informatique à Concordia University/IMT Atlantique, spécialisé en intelligence artificielle, data science, développement logiciel et algorithmique.">
+  		<meta name="keywords" content="Computer Science, Healthcare, Concordia, IMT Atlantique">
+		<meta name="author" content="Gilles Schneider">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+
+		<header style="height:100%;">
+		<div class="bg"></div>
+
+			<div class="container" style="color:white; background:white;" >
+				<div class="row" style="height: 20px;">
+					<div class="col" style="background: var(--primary);"></div>
+					<div class="col" style="background: var(--secondary);"></div>
+					<div class="col" style="background: #b8cfe6;"></div>
+				</div>
+
+
+				<div class="row">
+
+
+					<div class="col my-4" style="text-align:center;">
+
+                        <h5 style="color:var(--dark); text-align: left;">
+							[<a class="t-link" href="">May 31, 2021 </a>
+							/
+							<a class="t-link" href="">Jun 14, 2021</a>]
+						</h5>
+						<br>
+						<h1 class="t-intro"> AI AGAINST COVID19 </h1>
+                        <h4 style="color: black; font-style: italic"> Screening X-ray images for COVID-19 Infections</h4>
+						<p class="p-intro" >
+                            Organized by: <a class="t-link" href="">IEEE SIGHT MTL</a>, <a class="t-link" href="">VIP lab</a>, <a class="t-link" href="">DarwinAI</a>.
+
+
+						</p>
+						<br>
+						<!-- TODO: fix contact me -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+
+		<section>
+			<div class="container" style="background: white;">
+
+							<div class="row-md">
+								<div class="col-md">
+																	<h4>Challenge Overview</h4>
+
+									<p class="t-paragraph">The coronavirus disease 2019 (COVID-19) pandemic, caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) virus, has generated an unprecedented global health crisis, with more than 2.7 million deaths worldwide. The challenge consists of designing robust machine learning algorithms to predict if the subjects of study are either COVID-19 positive or COVID-19 negative. See more here.</p>
+
+								</div>
+								<div class="col-md">
+									<p class="t-paragraph">
+									The coronavirus disease 2019 (COVID-19) pandemic, caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) virus, has generated an unprecedented global health crisis, with more than 2.7 million deaths worldwide. The challenge consists of designing robust machine learning algorithms to predict if the subjects of study are either COVID-19 positive or COVID-19 negative. See more here.
+									</p>
+								</div>
+							</div>
+
+							<div class="divider-1"></div>
+
+
+						<li class="li-timeline" style="display: inline;">
+							<h4>My motivations</h4>
+							<p class="t-paragraph">
+								The SARS-CoV-2 2019 (COVID-19) current infection or past infection can be respectively detected by a viral test and an antibody test. However, artificial intelligence
+                                could become handy to help researchers diagnose COVID-10 with X-ray images, accelerating the treatment of people infected and saving lives.
+                                I am highly concerned of improving well-being and I have an in-depth knowledge of Deep Neural Network for image classification, thus I picked this challenge.
+							</p>
+							<div class="divider-1"></div>
+
+                        </li>
+
+
+                        	<li class="li-timeline" style="display: inline;">
+							<h4>Dataset: COVIDx CXR-2</h4>
+							<p class="t-paragraph">
+                               The <a class="t-link" href="" >COVIDx CXR-2</a> dataset contains images of COVID positive and negative chest radiography images.The data
+                                distribution is given below:
+                            </p>
+                                <br>
+                                 <table style="width:100%">
+                                      <tr>
+                                        <th>Type</th>
+                                        <th>COVID-19 Negative</th>
+                                        <th>COVID-19 Positive</th>
+                                          <th>Total</th>
+                                      </tr>
+                                      <tr>
+                                        <td>train</td>
+                                        <td>13793</td>
+                                        <td>2158</td>
+                                          <td>15951</td>
+                                      </tr>
+                                      <tr>
+                                        <td>test</td>
+                                        <td>200</td>
+                                        <td>200</td>
+                                          <td>400</td>
+                                      </tr>
+                                    </table>
+                                <br>
+                                <p class="t-paragraph">
+                                    COVIDx CXR-2 is highly imbalanced. It might be explained by the percent positive, (percentage
+                                    of all coronavirus tests performed that are actually positive) that is often low.
+                                    For instance, a reasonable percent positive has to be below 5% according to the World Health Organization.
+                                </p>
+							<div class="divider-1"></div>
+
+                        </li>
+
+                        	<li class="li-timeline" style="display: inline;">
+							<h4>Model</h4>
+							<p class="t-paragraph">
+                                A ResNeXt50 has been used for the classification task. We chose this network because it is a robust and highly modularized network
+                                architecture.
+							</p>
+							<div class="divider-1"></div>
+                            </li>
+
+                            <li class="li-timeline" style="display: inline;">
+							<h4>Training</h4>
+							<p class="t-paragraph">
+                                We created a custom balanced train set from the original train set of COVIDx CXR-2 by including all the COVID-19 Positive CXRs (2158) and randomly
+                                picking the same number of COVID-19 Negative CXRs (2158).
+                                We used the original test set as the validation set.
+							</p>
+                                <br>
+                                <table style="width:100%">
+                                      <tr>
+                                        <th>Type</th>
+                                        <th>COVID-19 Negative</th>
+                                        <th>COVID-19 Positive</th>
+                                          <th>Image Size</th>
+                                          <th>Total</th>
+                                      </tr>
+                                      <tr>
+                                        <td>custom train</td>
+                                        <td>2158</td>
+
+                                        <td>2158</td>
+                                          <td>240x240</td>
+                                          <td>4316</td>
+                                      </tr>
+                                      <tr>
+                                        <td>test</td>
+                                        <td>200</td>
+                                        <td>200</td>
+                                          <td>240x240</td>
+                                          <td>400</td>
+                                      </tr>
+                                    </table>
+                                <br>
+                            <p class="t-paragraph">
+                                The below table shows the training routine. Data augmentation improves the network generalization.
+							</p>
+                                <br>
+                                 <table style="width:100%;  border-collapse: collapse;">
+                                      <tr>
+                                        <th>Parameters</th>
+                                        <th>Learning Rate</th>
+                                        <th>Batch Size</th>
+                                          <th>Data Augmentation</th>
+                                      </tr>
+                                      <tr>
+                                        <td>custom train</td>
+                                        <td>0.001</td>
+                                        <td>32</td>
+                                          <td>1. Random Rotation (10°)</td>
+
+                                      </tr>
+                                     <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                          <td>2. Random Resized Crop</td>
+
+                                      </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                          <td>3. Brightness/Constrast</td>
+
+                                      </tr>
+                                     <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                          <td>4. Sharpness</td>
+
+                                      </tr>
+
+                                    </table>
+
+							<div class="divider-1"></div>
+                            </li>
+
+						<li class="li-timeline" style="display: inline;">
+							<h4>Results</h4>
+							<p class="t-paragraph">
+								The score of the challenge to the final test results is based on the weighted sum of the Sensitivity, Positive Predictive Value (PPV), and the Runtime of the model. To be more specific, the final score is as follows:
+								<br><br>
+								<p class="t-paragraph" style="text-align: center;"> <i>Score=6SP+5SN+3Pp+2PN-wt</i><p>
+								<br>
+								Where SP and Pp refer to the Sensitivity and PPV of the COVID-19 positive class. PNand SN refers to the Sensitivity and PPV of the COVID-19 negative class. t is the runtime of the algorithm and w is a non-negative weight. The score can be subject to change before the opening of the competition.
+							</p>
+							<div class="divider-1"></div>
+
+                        </li>
+
+					</div>
+					<div class="container" style="background:white;">
+
+					<div class="row" style="height: 100%; text-align: center;">
+						<div class="col-md">
+							<img src="assets/images/accuracy.png" style=""/>
+						</div>
+						<div class="col-md ">
+								<img src="assets/images/loss.png"/>
+								<br>
+					</div>
+
+
+					</div>
+				</div>
+				<br>
+		</section>
+
+
+
+
+
+		<footer>
+			<div class="container" style="background: #e0ecf8;">
+				<br>
+
+				<div class="row">
+
+					<div class ="col-md 4"  style="text-align: center;">
+
+						<h5 class="t-skills"> <i class="fa fa-phone"></i> Téléphone </h5>
+						<li style="display: inline; color: rgb(78, 75, 75);">
+							<p style="margin-bottom: 1px;"> 🇫🇷 +33 7 49 50 52 13 </p>
+						</li>
+						<li style="display:inline; color: rgb(78, 75, 75);">
+							<p > 🇨🇦 +1 (438) 238-6866 </p>
+						</li>
+
+					</div>
+					<div class ="col-md 4"  style="text-align: center;">
+						<h5 class="t-skills"> <i class="fa fa-envelope"></i> Email </h5>
+						<li style="display: inline; color: rgb(78, 75, 75);">
+							<p > gilles[dot]schneider[dot]imt[at]gmail.com </p>
+						</li>
+					</div>
+				</div>
+			</div>
+			<br>
+		</footer>
+			<script src="https://unpkg.com/scrollreveal"></script>
+			<script src="app.js"></script>
+
+	</body>
+
+
+
+</html>
+
