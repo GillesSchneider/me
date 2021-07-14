@@ -168,7 +168,7 @@
 											We plug the output of the encoder to the input of each bee. Every bee is trained on embeddings of a balanced dataset stratum. <b>The stratum are disjoint for negative cases</b>. They can share positive images.
                             			</p>
 										<br>
-										<h6>3.4 Queen Learning</h6>
+										<h6>3.5 Queen Learning</h6>
 										<p class="t-paragraph">
 											We plug the outputs of the bees to the input of the queen. It is the last layer of the model. We fine-tune it on <b>the whole dataset.</b> It learns to make accurate predictions based on the swarm predictions.
 											For every input image, the swarm is led by a <b>bee leader</b>. Indeed, we know that one bee already saw the input image during its training.
@@ -215,7 +215,7 @@
                             		</p>
 									<br>
 									<p class="t-paragraph">
-										3. Using lungs segmentation to generate embeddings allows the bees to target more the lungs.
+										3. Using lungs segmentation to generate embeddings allows the bees to target the lungs.
                             		</p>
 									<br>
 									<p class="t-paragraph">
