@@ -130,6 +130,11 @@
   border-radius: 50%;
   width: 75%;
 }
+.rounded-image{
+  border-radius: 50%;
+  width: 128px;
+}
+
 .image-sub-text{
   font-size:30px;
   color: black;
