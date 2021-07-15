@@ -182,7 +182,8 @@
 								<h6>3.2 Data encoding </h6>
 									<p class="t-paragraph">
 										In order to use small classifiers as <i>bees</i>, we need to encode Chest X-Rays, hence reducing dimensionality.
-										We train an encoder-decoder (U-NET) to <b>reproduce input images</b> OR <b>segment the lungs</b>. The encoder-decoder generates embeddings of the input images in lower dimensionality. Once the training is completed, we freeze its weights and keep the encoder.
+										We train an encoder-decoder (U-NET) to <b>reproduce input images</b> OR <b>segment the lungs</b>. The encoder-decoder generates embeddings of the input images in lower dimensionality.
+										When the training is completed, we freeze its weights and keep the encoder.
                             		</p>
 								<br>
 
@@ -192,7 +193,7 @@
 
 										<h6>3.4 Training the Swarm 🐝</h6>
 										<p class="t-paragraph">
-											We stratify the dataset and assign each <i>bee</i> with a dataset stratum. <b>The stratum are disjoint in terms of negative cases but they can share positive cases.</b> Every bee is connected to the encoder’s output and fine-tuned on the embeddings of its corresponding dataset stratum.
+											We stratify the dataset and assign each <i>bee</i> with a dataset stratum. <b>The stratum are disjoint in terms of negative cases but they can have positive cases in common.</b> Every bee is connected to the encoder’s output and fine-tuned on the embeddings of its corresponding dataset stratum.
 											After all the <i>bees</i> have been trained, we freeze their weights.
                             			</p>
 										<br>
@@ -203,9 +204,9 @@
 											In the swarm, there is always a <i>bee</i> that leads the predictions because it has already seen the input image during the training of the <i>swarm</i>.
 										</p>
 										<br>
-										<h6>3.6 Model overview </h6>
+
 										<p class="t-paragraph">
-											The model is shown in Figure 1.
+											<i>The model is shown in Figure 1.</i>
 										</p>
 
 
