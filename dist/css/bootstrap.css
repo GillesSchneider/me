@@ -130,9 +130,14 @@
   border-radius: 50%;
   width: 75%;
 }
-.rounded-image{
+.rounded-image-gilles{
   border-radius: 50%;
-  width: 128px;
+  width: 140px;
+}
+
+.rounded-image-hugo{
+  border-radius: 50%;
+  width: 144px;
 }
 
 .image-sub-text{

@@ -62,13 +62,13 @@
 							Dec, 2021
 						</h5>
 						<h5 style="color:var(--dark); text-align: right;">
-							Team: TBA
+							Team: AGORA
 						</h5>
 						<a href="https://github.com/hkerma/against-covid-19-ConcordIA" target="_blank" class="fa fa-github" style="color:#6e79a9; float: right; font-size: 40px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%;"></a>
 						<br>
 							<div class="divider-1"></div>
-						<h1 class="t-intro"> AI AGAINST COVID19 - PHASE II </h1>
-                        <h4 style="color: black; font-style: italic"> Screening X-ray images for COVID-19 Infections</h4>
+						<h1 class="t-intro"> AI AGAINST COVID19 (II) </h1>
+                        <h4 style="color: black; font-style: italic"> AGORA: Swarm Deep-Learning for Covid-19 detection</h4>
 						<p class="p-intro" >
                             Organized by: IEEE SIGHT MTL,
 							VIP lab,
@@ -98,7 +98,7 @@
 
 				<div class="row">
 
-						<div class="col-md-6">
+						<div class="col-md">
 
 							<h4>1. Our Team</h4>
 							<p class="t-paragraph">
@@ -111,20 +111,33 @@
 
 							<div class="divider-1"></div>
 						</div>
-						<div class="col-md-3" style="text-align: center;">
-							<br/>
-							<img class = "rounded-image" src="assets/images/gilles.jpg">
 
-
-						</div>
-						<div class="col-md-3" style="text-align: center;">
-							<br/>
-							<img class = "rounded-image" src="assets/images/hugo.jpg">
-
-						</div>
 
 				</div>
-				<br>
+
+				<div class="row">
+
+					<div class="col-md-6" style="text-align: center;">
+							<br>
+							<img class = "rounded-image-gilles" src="assets/images/gilles.jpg">
+							<br>
+							<p><i>Gilles Schneider </i></p>
+
+
+
+
+
+						</div>
+						<div class="col-md-6" style="text-align: center;">
+							<br>
+							<img class = "rounded-image-hugo" src="assets/images/hugo.jpg">
+							<br>
+							<p><i>Hugo Kermabon</i></p>
+							<div class="divider-1"></div>
+						</div>
+
+
+				</div>
 				<div class="row">
 						<div class="col-md">
 
@@ -143,16 +156,21 @@
 				</div>
 				<div class="row">
 						<div class="col-md-6">
-								<h4>3. The model</h4>
+								<h4>3. Swarm Deep-Learning</h4>
+								<p class="t-paragraph">
+									<i>The current section introduces the key ideas of the Swarm Deep-Learning and the model that we want to develop. Therefore, it does not aim at going into great technical details: it gives an overall look at it.
+									</i>
+								</p><br>
 								<h6>3.1 Analogy </h6>
 									<p class="t-paragraph">
-										We initialize a set (swarm) of small identical classifiers (bees) and a final decider (queen). The queen
-										uses the predictions of the bees to make the final predictions.
+										We initialize a set (swarm) of small identical classifiers (bees) and a final decider (queen). The <i>queen</i>
+										uses the predictions of the <i>bees</i> to make the final predictions.
                             		</p>
 								<br>
 								<h6>3.2 Data encoding </h6>
 									<p class="t-paragraph">
-										In order to use small classifiers as <i>bees</i>, we need to encode Chest X-Rays to reduce dimensionality. We train an encoder-decoder (U-NET) to reproduce input images OR segment the lungs. The encoder-decoder generates embeddings of the input images in lower dimensionality. Once the training is completed, we freeze its weights and keep the encoder.
+										In order to use small classifiers as <i>bees</i>, we need to encode Chest X-Rays, hence reducing dimensionality.
+										We train an encoder-decoder (U-NET) to <b>reproduce input images</b> OR <b>segment the lungs</b>. The encoder-decoder generates embeddings of the input images in lower dimensionality. Once the training is completed, we freeze its weights and keep the encoder.
                             		</p>
 								<br>
 
@@ -160,17 +178,23 @@
 						</div>
 						<div class="col-md-6">
 
-										<h6>3.4 Swarm Learning</h6>
+										<h6>3.4 Training the Swarm 🐝</h6>
 										<p class="t-paragraph">
-											We plug the output of the encoder to the input of each bee. Every bee is trained on embeddings of a balanced dataset stratum. <b>The stratum are disjoint for negative cases</b>. They can share positive images.
+											We stratify the dataset and assign each <i>bee</i> with a dataset stratum. <b>The stratum are disjoint in terms of negative cases but they can share positive cases.</b> Every bee is connected to the encoder’s output and fine-tuned on the embeddings of its corresponding dataset stratum.
+											After all the <i>bees</i> have been trained, we freeze their weights.
                             			</p>
 										<br>
-										<h6>3.5 Queen Learning</h6>
+										<h6>3.5 Training the Queen 👑 </h6>
 										<p class="t-paragraph">
-											We plug the outputs of the bees to the input of the queen. It is the last layer of the model. We fine-tune it on <b>the whole dataset.</b> It learns to make accurate predictions based on the swarm predictions.
-											For every input image, the swarm is led by a <b>bee leader</b>. Indeed, we know that one bee already saw the input image during its training.
+											We connect the last layer of model, the final decider (queen), to the outputs of the <i>bees</i>.
+											We fine-tune the <i>queen</i> on the whole dataset. It learns to make predictions based on the <i>swarm</i> predictions.
+											In the swarm, there is always a <i>bee</i> that leads the predictions because it has already seen the input image during the training of the <i>swarm</i>.
 										</p>
 										<br>
+										<h6>3.6 Model overview </h6>
+										<p class="t-paragraph">
+											The model is shown in Figure 1.
+										</p>
 
 
 
@@ -188,7 +212,7 @@
 							<img style="height: 350px;"src="assets/images/model.jpg">
 
 						<br><br>
-						<p style="font-size: 13px; font-style: italic;">From top to bottom: Encoder-decoder. Swarm (set of n classifiers). Queen (decider).</p>
+						<p style="font-size: 13px; font-style: italic;">Figure 1: From top to bottom: Encoder-decoder. Swarm (set of n classifiers). Queen (decider).</p>
 						<div class="divider-1"></div>
 
 					</div>
@@ -198,27 +222,39 @@
 						<div class="col-md">
 								<h4>4. Discussion</h4>
 
+								<p class="t-paragraph">
+									<i>The advantages and limitations drawn below are hypothetical as we have not tested the model yet.
+										We have not found similar approaches in the scientific community. It is a new way that we wish to explore.
+										We can either discover that the approach is efficient or not. In all cases we will explain the reasons why Swarm Deep-Learning is efficient or not.
+									</i>
+								</p><br>
+
 								<h6>4.1 Advantages </h6>
 									<p class="t-paragraph">
 										Here is a non-exhaustive list of advantages of this new approach over our first approach:
                             		</p>
 									<br>
 									<p class="t-paragraph">
-										<i>1. The aggregation will be done by a neural network (Queen) and will no longer rely on a heuristics.
+										<i>1. The aggregation will be done by a neural network (queen) and will no longer rely on a deterministic formula. For instance, taking the majority (>50%).
                             		</p>
 									<br>
 									<p class="t-paragraph">
-										2. The swarm will exploit the whole dataset: only 14% of random negative images were previously used for each training.
+										2. The swarm will use the whole dataset. Only 14% of random negative images were previously used for each training of phase 1.
+										Furthermore, every bee will create its own representations of the COVID-19 detection problem. In fact, a given bee will at least be trained on its
+										own negative cases.
                             		</p>
 									<br>
 									<p class="t-paragraph">
-										3. Using lungs segmentation to generate embeddings allows the bees to target the lungs.
+										3. The swarm gives exploitable statistics of the predictions (mean, standard deviation, repartition, etc.).
+										That could be a powerful tool for practitioners.
+										We can study the swarm by modifying the number of bees or we can assign specific data to each bee, making them variant-specific for instance.
                             		</p>
 									<br>
 									<p class="t-paragraph">
-										4. The swarm gives better statistics of the predictions (mean, standard deviation, repartition, etc.). That could be a powerful tool for practitioners.</i>
+										4. Using lungs segmentation to generate embeddings allows the bees to target more the areas of a possible infection. </i>
                             		</p>
-								<br>
+									<br>
+
 
 
 
@@ -235,14 +271,18 @@
 										<br>
 										<p class="t-paragraph">
 											<i>1. The bees are not deep enough to achieve good performance. That might lead us to make them deeper, thus increasing memory footprint.
+												Designing bees will not be an easy task.
 										</p>
 										<br>
 										<p class="t-paragraph">
-											2. The embeddings generated by the encoder-decoder are not relevant for the bees.
+											2. The embeddings generated by the encoder-decoder are not relevant enough to be used in a
+											classification task. Furthermore, each layer (encoder, swarm, queen) introduces error to the
+											original data.
+
 										</p>
 										<br>
 										<p class="t-paragraph">
-											3. Implementing the bees and the queen is a real challenge.</i>
+											4. Training the swarm might be time-consuming.</i>
 										</p>
 
 										</p>
